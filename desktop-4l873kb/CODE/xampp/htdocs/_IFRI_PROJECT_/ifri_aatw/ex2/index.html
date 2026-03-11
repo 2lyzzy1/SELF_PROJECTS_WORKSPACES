@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Php ° Maintien de l’état du formulaire </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			min-height: 100vh;
+			align-content: center;
+			background: black;
+		}
+		form {
+			margin: auto;
+			padding: 7px;
+			max-width: 421px;
+			background: #fafafad0;
+		}
+		fieldset {
+			border: solid 1px black;
+		}
+		legend {
+			font: 18px bolder;
+		}
+		input[type=text] {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="stock.php">
+  	<fieldset>
+			<div>
+  			<legend> Infos </legend>
+				<!--  -->
+  			<label for=""> Nom : </label>
+  			<input id="" type="text" name="nom">
+				<br><br />
+				Débutant : <input type="radio" name="" value="" checked> &nbsp;&nbsp;  Initié : <input type="radio" name="" value="">
+				<br><!--  --><br>
+  			<input type="reset" value="Effacer"> &nbsp;&nbsp;&nbsp; <input type="submit" value="Envoyer">
+			</div><br>
+			<div hidden  style="height:2px; background:black;" ></div><br>
+			<div>
+				<!-- // -->
+			</div>
+  	</fieldset>
+	</form>
+</body>
+</html>
+
