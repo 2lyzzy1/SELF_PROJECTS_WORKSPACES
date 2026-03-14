@@ -1,0 +1,39 @@
+    //
+    // C:/Users/HP/.user_GameAppenv/Scripts/Activate
+    // pip install pyperclip
+    //
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"window.zoomLevel": -2,
+    "python.defaultInterpreterPath": "C:\\Users\\HP\\.user_GameAppenv\\Scripts\\python.exe",
+		"C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+		"php.validate.executablePath": "C:\\Users\\HP\\Downloads\\WIN_sys\\Programs\\php-8.3.27-Win32-vs16-x64\\php.exe",
+		
+		// mutables changes	(M.C.)
+		"python.pipenvPath": "C:\\Users\\HP\\.user_GameAppenv\\Scripts\\pip.exe",
+		/*
+		"python-env.workspaceSearchPaths": [
+			// Not Always Used	(N.A.U.)
+			"C:\\Users\\HP\\.user_pyenv\\Scripts\\python.exe",
+			"C:\\Users\\HP\\.user_SYSenv\\Scripts\\python.exe",
+			"C:\\Users\\HP\\.user_AIenv\\Scripts\\python.exe",
+			// Always Used	(A.U.)
+			"C:\\Users\\HP\\.user_MLenv\\Scripts\\python.exe",
+			"C:\\Users\\HP\\.user_GameAppenv\\Scripts\\python.exe",
+			"C:\\Users\\HP\\.user_WEBenv\\Scripts\\python.exe",
+		],
+		*/
+		// end (M.C.)
+
+		// particular
+		"editor.tabSize": 2,
+		"workbench.colorTheme": "Default Dark Modern",
+		"editor.fontFamily": null, // "Goudy Old Style" | // "Goudy Old Style", "Lucida Sans Unicode", "Gabriola", //
+		"editor.fontSize": 13,
+	}
+}
