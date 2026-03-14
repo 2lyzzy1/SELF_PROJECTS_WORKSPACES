@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../_Datasets_"
+		},
+		{
+			"path": "../../.docs/AI"
+		},
+		{
+			"path": "../../.docs/_ML_"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"window.zoomLevel": -1.5
+	}
+}

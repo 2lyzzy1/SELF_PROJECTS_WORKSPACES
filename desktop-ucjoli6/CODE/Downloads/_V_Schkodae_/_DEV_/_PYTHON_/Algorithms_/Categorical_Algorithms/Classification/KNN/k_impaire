@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+class Person() {
+    private int n;
+    private String str;
+
+    public static void main(String[] args) {
+        Scanner scann = new Scanner(System.in);
+        this.n = Integer(scann.nextInt());
+    }
+}
