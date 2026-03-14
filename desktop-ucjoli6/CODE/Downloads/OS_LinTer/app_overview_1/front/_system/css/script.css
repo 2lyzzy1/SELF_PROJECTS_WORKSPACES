@@ -1,0 +1,133 @@
+/* usr//drive//self.script.css */
+
+/* ___________________________________________________________ */
+
+/* TIMES */
+#timeStamp {
+    margin: 0;
+    padding: auto;
+    max-height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    
+    display: none_;
+    text-align: center;
+    text-wrap-mode: nowrap;
+    color: aquamarine;
+    background: fixed rgba(0, 0, 0, 0.871);
+    opacity: 0.7;
+    transition: all 7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+
+/* ___________________________________________________________ */
+
+/* ELEMENTS :: OBJects */
+
+* {
+    box-sizing: border-box;
+    transition: all .8s ease-in-out 1ms;
+}
+body {
+    overflow-x: hidden;
+    font-family: Copperplate, Papyrus, fantasy;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    padding: 2px;
+}
+a {
+    cursor: pointer;
+}
+a:hover {
+    opacity: .8;
+}
+
+input {
+    border-radius: 12px;
+}
+button {
+    cursor: pointer;
+    border-radius: 4px;
+}
+.arrow_ {
+    font-size: 121%;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 1%;
+}
+center {
+    margin: 2px 1px;
+}
+
+/* ___________________________________________________________ */
+
+/* FONT-FAMILY */
+.fantasy_ {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+.cursive_ {
+    font-family: "Brush Script MT", cursive;
+}
+.courier_ {
+    font-family: 'Courier New', Courier, monospace;
+}
+.verdana_ {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ___________________________________________________________ */
+
+/* MIN CSS */
+* {
+    user-select: none;
+}
+
+*, .fantasy_ {
+    -webkit-user-drag: auto;
+}
+
+.cursor_ {
+    cursor: pointer;
+}
+.upperW_ {
+    text-transform: uppercase;
+}
+
+.hidden_ {
+    display: none;
+}
+
+/* ___________________________________________________________ */
+
+/* FLEX */
+.flex_row_ {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;/**/
+    margin: auto;
+}
+.flex_column_ {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* ___________________________________________________________ */
+
+/* GRID */
+.grid_ {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.grig_row_ {}
+.grig_column_ {}
+
+/* ___________________________________________________________ */
+
+/**/
+
+/* ___________________________________________________________ */
+

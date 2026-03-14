@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=_"en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../_system/css/script.css">
+  <link rel="stylesheet" href="./loger.css">
+  <title>Deconnexion</title>
+  <script src="../../_system/js/script.js"></script>
+  <script src="../../_system/js/logger_.js"></script>
+</head>
+<body>
+    <form id="logout" name="form_ " action="" onsubmit="" >
+      <!-- $HEADING$ -->
+      <div>
+        <h3 style="text-align:center;">Déconnexion</h3>
+        <div style="text-align:center;border:1px solid;width:50%;;"></div>
+      </div>
+      <!-- $MESSAGES$ -->
+      <p> You will be disconnected from this computer or browser. </p>
+      <!-- $BUTTON$ -->
+      <span>
+        <div class="actButton flex_row_ ">
+          <a id="return" onclick="redirect('../../_views/private/Profile.html')"> <span class="arrow_"><</span> Go Back</a>
+          &nbsp;
+          <button id="disconnect" type="button" onclick="redirect('../../_index_.html')"> <span class="arrow_">x</span> Disconnect</button>
+        </div><br>
+        <center class="dark_center"> <span>~X~</span> &nbsp; GoodBye Forever &nbsp; <span>~X~</span> </center>
+      </span>
+    </form>
+</body>
+</html>

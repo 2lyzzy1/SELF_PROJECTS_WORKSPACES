@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=_"en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../_system/css/script.css">
+  <link rel="stylesheet" href="./loger.css">
+  <title>Inscription</title>
+  <script src="../../_system/js/script.js"></script>
+  <script src="../../_system/js/logger_.js"></script>
+</head>
+<body>
+    <form id="register" name="form_ " action="" onsubmit="" >
+      <!-- $HEADING$ -->
+      <div>
+        <h3 style="text-align:center;">Inscription</h3>
+        <div style="text-align:center;border:1px solid;width:50%;;"></div>
+      </div>
+      <!-- $FIELDS$ -->
+      <div class="flex_row_">
+        <span class="span_ ">
+          <label for="lastName"> LastName </label>
+          <input type="text" id="lastName" name="lastName"
+             dirname="lastName-direction" value>
+        </span>
+        <span class="span_ ">
+          <label for="firstname"> FirstName </label>
+          <input type="text" id="firstName" name="firstName"
+             dirname="firstName-direction" value>
+        </span>
+      </div>
+      <span class="span_ ">
+        <label for="eMail"> Email Address </label>
+        <input type="email" id="eMail" name="eMail"
+           dirname="eMail-direction" value>
+      </span>
+      <span class="span_ ">
+        <label for="passWord"> Password </label>
+        <input type="password" id="passWord" name="passWord"
+           dirname="passWord-direction" value>
+      </span>
+      <!-- $CHECKERS$ -->
+      <span class="flex_row_ checker_ ">
+        <input type="checkbox" id="checkBox" name="checkBox"
+            value checked>
+        <i> Read and Accepted the Terms & Conditions of Use ?</i>
+      </span>
+      <!-- $BUTTON$ -->
+      <span>
+        <div class="actButton flex_row_ ">
+          <button id="reset" type="reset">Reset</button>
+          &nbsp;
+          <button id="submit" type="submit">Register</button>
+        </div><br>
+        <center class="light_center">Doesn't have account ? | <u><a onclick="redirect('./login.html')">Login</a></u> </center>
+      </span>
+    </form>
+</body>
+</html>

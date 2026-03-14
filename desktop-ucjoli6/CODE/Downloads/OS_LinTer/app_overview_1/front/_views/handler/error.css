@@ -1,0 +1,62 @@
+
+/* $init$ */
+body {
+    justify-items: center;
+    align-content: center;
+    background: rgba(70, 1, 1, 0.342);
+}
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+/* $container$ */
+.error_container {
+    text-align: center;
+    width: fit-content;
+    border-radius: 21%;
+    margin: 21px;
+    padding: 21px;
+    position: relative;
+    z-index: 10;
+    animation: error .5s infinite;
+}
+
+.error_text {
+    font-size: 120%;
+    color: brown;
+}
+
+#cute_switch_on {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 54%;
+    padding: 10px;
+}
+#cute_switch_on:hover {
+    scale: 1.2;
+}
+
+button[type="button"] {
+    padding: 6px;
+    border: none;
+    border-radius: 7%;
+    background: #a1e2f6ce;
+}
+button[type="button"]:hover {
+    transition: all 1s ease-in-out 0ms;
+    background: #ffffff82;
+    scale: 0.901;
+    animation: error 1.2s infinite;
+}
+
+@keyframes error {
+    from {
+        box-shadow: 0px 4px 8px 12px rgba(135, 133, 133, 0.529);
+    } to {
+        box-shadow: 0px 1px 4px 7px rgba(255, 0, 0, 0.409);
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=_"en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../_system/css/script.css">
+  <link rel="stylesheet" href="./loger.css">
+  <title>Connexion</title>
+  <script src="../../_system/js/script.js"></script>
+  <script src="../../_system/js/logger_.js"></script>
+</head>
+<body>
+    <form id="login" name="form_ " action="" onsubmit="HandleSubmit()" >
+      <!-- $HEADING$ -->
+      <div>
+        <h3 style="text-align:center;">Connexion</h3>
+        <div style="text-align:center;border:1px solid;width:50%;;"></div>
+      </div>
+      <!-- $FIELDS$ -->
+      <!span>
+      <span class="span_ ">
+        <label for="eMail"> Email Address </label>
+        <input type="email" id="eMail" name="eMail"
+           dirname="eMail-direction" value>
+      </span>
+      <span class="span_ ">
+        <label for="passWord"> Password </label>
+        <input type="password" id="passWord" name="passWord"
+           dirname="passWord-direction" value>
+      </span>
+      <!-- $CHECKERS$ -->
+      <!/span>
+      <!-- $BUTTON$ -->
+      <span>
+        <span class="flex_row_ checker_ remember_ ">
+          <input type="checkbox" id="checkBox" name="checkBox"
+              value checked>
+          <i> Remember me </i>
+        </span>
+        <!-- $¤$ -->
+        <div class="actButton flex_row_ ">
+          <button id="reset" type="reset">Quit</button>
+          &nbsp;
+          <button id="submit" type="submit">Connect</button>
+        </div><br>
+        <center class="light_center">Have account yet ? | <u><a onclick="redirect('./register.html')">Register</a></u> </center>
+      </span>
+    </form>
+</body>
+</html>

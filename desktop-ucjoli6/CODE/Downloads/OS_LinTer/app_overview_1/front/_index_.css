@@ -1,0 +1,171 @@
+
+/* $__init__$ */
+html {
+    background: linear-gradient(rgba(125, 190, 239, 0.901), rgba(128, 128, 128, 0.565));
+    /*position: sticky;*/
+}
+/* body */
+#root {
+    margin: 0 auto;
+    background: #000000a0;
+    /*align-content: center;*/
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 98, 150);
+}
+
+/* $__container__$ */
+/* div */
+#app_container {
+    display: block;
+    margin: 0 21px;
+    padding: 21px 12px;
+    max-width: 1521px;
+    min-width: 321px;
+    min-height: 100vh;
+    height: 100%;
+    background: #00000016;
+}
+
+/* $__section__$    ->  HEADER
+* ------------------------------------------------
+*/
+/* $__navbar__$ */
+nav, #nav_ {
+    font-size: 85%;
+    border-bottom-left-radius: 14%;
+    border-bottom-right-radius: 14%;
+    padding: 7px 12px;
+}
+#nav_ {
+    position: fixed /* !always */;
+    top: 1px;
+    left: 0;
+    right: 0;
+    z-index: 10 !important;/**/
+    margin: 0;
+    padding: 7px;
+    min-height: 54px;
+    width: 100%;
+    background: #e6e1e1b0;
+    box-shadow: 0 0 12px 0 #00000043;
+}
+/**/
+#searchBox {
+    border-radius: 42%;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    padding: 7px;
+}
+/**/
+.navblock {
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(0, 98, 150);
+    margin: auto;
+}
+/*.navblock:hover */
+.navlink:hover, .navlink:hover:nth-child(n) {
+    color: rgb(0, 26, 56);
+}
+/**/
+.navlink {
+    padding: 10px 5px;
+}
+.nav_details_ {
+    transition: all 3s ease-in-out;/**/
+    display: none;/**/
+    padding: 5px;
+    background: rgba(243, 255, 248, 0.526);
+}
+.navblock:hover .nav_details_ {
+    transition: all 3s ease-in-out;/**/
+    display: flex;
+    flex-direction: column;/**/
+    transform: translateY(-12px) translateX(7px);
+    position: absolute;
+    z-index: 12;/**/
+}
+.nav_details_ a {
+    padding: 4px 7px;
+}
+#profile_link {
+    border-radius: 50%;
+}
+
+@media /* screen and */ (max-width: 888px) {
+    nav, #nav_ {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        overflow-y: hidden;
+        height: 25%;
+    }
+}
+
+/* ---------------------------------------------- */
+
+/* $__section__$    ->  BODY
+* ------------------------------------------------
+*/
+.appSubContainer {  /* .s_form,  */
+    margin: 51px auto;
+    padding: 12px 7px;
+    height: 100%;
+    min-height: 700px;
+    max-width: 921px;
+    width: 100%;/**/
+    color: rgb(180, 176, 176);  /* or #000000 */
+    background: rgba(3, 76, 128, 0.304);
+    border-radius: 7%;
+}
+.flex_container {
+    height: 70px;
+    background: #e6e1e1a0;
+}
+
+@media /* screen and */ (max-width: 888px) {}
+
+/* ---------------------------------------------- */
+
+/*  */
+/* $__section__$ */
+/* $__section__$ */
+/* $__section__$ */
+/**/
+
+/* $__section__$    ->  FOOTER
+* ------------------------------------------------
+*/
+.appFooter {
+    display: inline-block;
+    margin: 0;
+    padding: 7px 12px;
+    width: 100%;
+    background-color: #ffffff7d;
+    position: relative;
+    /* bottom: -21px; */
+}
+
+.footer_subContainer  {
+    margin: 3px 4px;
+    padding: 5px;
+    /* width: 100%; !causing_layer_problem */
+    gap: 12px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 255, 0.636);
+}
+/* .footer_subContainer div { } */
+.footerPart {
+    flex: 1 1 auto;
+    padding: 4px 10px;
+    /* width: 100%; !non-important :: inutil */
+}
+
+.Copyrigth {
+    padding: 4px 0;
+    background: black;
+    color: azure;
+}
+
+

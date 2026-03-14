@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Animations</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+
+    header {
+      height: 100vh;
+      background-image: url('https://picsum.photos/1200/800');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3em;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>Parallax Header</header>
+  <section class="anim">Section 1</section>
+  <section class="anim">Section 2</section>
+  <section class="anim">Section 3</section>
+
+  <script>
+    // Intersection Observer pour fade-in
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.anim').forEach(el => observer.observe(el));
+
+    // Parallax simple sur le header
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY;
+      document.querySelector('header').style.backgroundPositionY = `${scrollPos * 0.5}px`;
+    });
+  </script>
+</body>
+</html>

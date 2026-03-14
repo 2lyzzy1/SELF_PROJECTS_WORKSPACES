@@ -1,0 +1,49 @@
+
+
+#container {
+  padding: 21px 14px 54px;
+  min-height: 100vh;
+}
+
+#header {
+  margin: 0;
+  padding: 6px;
+  height: 100%;
+  min-height: 21px;
+  background: rgba(1, 37, 59, 0.856);
+}
+
+#funcBox {
+  gap: 7px;
+  height: 100%;
+  min-height: 80vh;
+}
+
+#todolist {
+  gap: 27px;
+  width: 75%;
+  background: rgba(0, 0, 0, 0.764);
+}
+
+#actInput {
+  border: none;
+}
+
+#sider {
+  gap: 21px;
+  width: 25%;
+  background: burlywood;
+}
+
+.flex_IF {
+  flex: 1 1 auto;
+  margin: 2px 4px;
+  padding: 21px;
+  border: .8px solid black;
+  border-radius: 14px;
+  box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.585);
+}
+
+/* ----------------------------------- */
+
+
