@@ -66,8 +66,72 @@ Si tu veux, je peux te donner un exemple concret avec un exercice corrigé (math
 # -->
 
 
-# (1) 
+# (1) En Recherche opérationnelle, comment le définir ?
 
+En **recherche opérationnelle**, le **critère d’optimalité** se définit de façon précise à travers la **fonction objectif**.
+
+### 🔹 Définition
+
+Le critère d’optimalité est la règle qui permet de juger qu’une solution est optimale, c’est-à-dire qu’elle **donne la meilleure valeur possible de la fonction objectif tout en respectant les contraintes du problème**.
+
+---
+
+### 🔹 Formulation mathématique
+
+Un problème de recherche opérationnelle s’écrit généralement :
+
+* Maximiser ou minimiser :
+  👉 ( Z = f(x_1, x_2, ..., x_n) )  → **fonction objectif**
+
+* Sous contraintes :
+  👉 ( g_i(x_1, ..., x_n) \leq, =, \geq b_i )
+
+---
+
+### 🔹 Critère d’optimalité
+
+Une solution est dite optimale si :
+
+1. Elle est **réalisable** (elle respecte toutes les contraintes)
+2. Elle **optimise la fonction objectif** :
+
+   * **maximum** si on cherche à maximiser
+   * **minimum** si on cherche à minimiser
+
+---
+
+### 🔹 Exemple simple
+
+Une entreprise veut maximiser son profit :
+
+* Fonction objectif :
+  ( Z = 5x + 3y )
+
+* Contraintes :
+  ( x + y \leq 10 )
+  ( x, y \geq 0 )
+
+👉 Le critère d’optimalité consiste à trouver les valeurs de (x) et (y) qui donnent **la plus grande valeur de (Z)** tout en respectant les contraintes.
+
+---
+
+### 🔹 Cas particulier : programmation linéaire
+
+Dans ce cadre :
+
+* Le critère d’optimalité est atteint en un **sommet du domaine admissible**
+* Une solution est optimale si **aucune autre solution réalisable ne donne une meilleure valeur de la fonction objectif**
+
+---
+
+### 🔹 Résumé
+
+👉 En recherche opérationnelle, le critère d’optimalité est :
+**l’optimisation (max ou min) de la fonction objectif sur l’ensemble des solutions réalisables.**
+
+---
+
+Si tu veux, je peux aussi t’expliquer les **conditions d’optimalité (comme le simplexe ou les conditions KKT)**.
 
 # -->
 
