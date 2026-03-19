@@ -1,4 +1,4 @@
-# [chatgpt.com](_/ChatGPT/...)
+# [_/ChatGPT/...](chatgpt.com)
 
 # (0) critère d’optimalité
 
