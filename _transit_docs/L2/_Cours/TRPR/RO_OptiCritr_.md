@@ -255,3 +255,121 @@ Si tu veux, je peux te proposer **le meilleur logiciel selon ton niveau (L1, L2,
 # -->
 
 
+# (3) Comment représenter des graphes (syntaxes de codes) dans un fichier Markdown ?
+
+Pour représenter des **graphes dans un fichier Markdown**, on utilise généralement des outils compatibles avec Markdown comme **Mermaid** ou **Graphviz**. Voici les méthodes les plus utilisées 👇
+
+---
+
+# 🔹 1. Avec Mermaid (le plus simple ✅)
+
+Mermaid est intégré dans beaucoup d’éditeurs (GitHub, Notion, VS Code…).
+
+### ✔ Syntaxe de base
+
+````markdown
+```mermaid
+graph TD
+  A[Départ] --> B[Étape 1]
+  B --> C[Étape 2]
+  C --> D[Fin]
+````
+
+````
+
+### ✔ Types de graphes
+- `TD` : top-down (haut → bas)
+- `LR` : left-right (gauche → droite)
+
+### ✔ Exemple (graphe orienté)
+```markdown
+```mermaid
+graph LR
+  A --> B
+  A --> C
+  B --> D
+  C --> D
+````
+
+````
+
+👉 Résultat : un graphe orienté clair et automatique.
+
+---
+
+# 🔹 2. Avec Graphviz (DOT language)
+
+Graphviz est plus puissant mais nécessite parfois un plugin.
+
+### ✔ Syntaxe
+```markdown
+```dot
+digraph G {
+  A -> B;
+  A -> C;
+  B -> D;
+  C -> D;
+}
+````
+
+````
+
+### ✔ Graphe non orienté
+```markdown
+```dot
+graph G {
+  A -- B;
+  A -- C;
+}
+````
+
+````
+
+---
+
+# 🔹 3. Avec code + image (méthode universelle)
+
+Si Markdown ne supporte pas Mermaid :
+
+1. Générer une image avec Graphviz
+2. L’insérer :
+
+```markdown
+![Graphe](graphe.png)
+````
+
+---
+
+# 🔹 4. Comparaison rapide
+
+| Outil    | Facilité | Puissance | Idéal pour                   |
+| -------- | -------- | --------- | ---------------------------- |
+| Mermaid  | ⭐⭐⭐⭐     | ⭐⭐⭐       | Étudiants, docs rapides      |
+| Graphviz | ⭐⭐⭐      | ⭐⭐⭐⭐      | Recherche, graphes complexes |
+
+---
+
+# 🔹 ✅ Recommandation
+
+* 📘 Débutant : **Mermaid**
+* 📊 Recherche opérationnelle : **Graphviz**
+* 💻 Programmation : Graphviz + Python
+
+---
+
+# 🔹 💡 Astuce
+
+Si tu utilises :
+
+* **GitHub** → Mermaid fonctionne directement
+* **VS Code** → extension “Markdown Preview Mermaid Support”
+
+---
+
+Si tu veux, je peux te donner :
+
+* un **exemple de graphe de transport (recherche opérationnelle)**
+* ou un **graphe pondéré avec coûts** 👍
+# -->
+
+
