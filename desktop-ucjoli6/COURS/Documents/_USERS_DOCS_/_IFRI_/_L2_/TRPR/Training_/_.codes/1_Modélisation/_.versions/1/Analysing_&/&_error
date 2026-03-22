@@ -1,0 +1,17 @@
+&impossible relationship!
+
+I -> D -
+K -> E -
+L -> E -
+M -> K -
+
+I --> dD --> I;
+
+Goal --> ❌✅;
+
+Goal -.-> in["✅"]
+
+... -.-> out["❌"]
+
+continue;
+
